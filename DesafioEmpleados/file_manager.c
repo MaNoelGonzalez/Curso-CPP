@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <stdlib.h>
+#include <stdlib.h>
 #include "file_manager.h"
 
 int guardar_lista_empleados(const char *filename, ListaEmpleados *lista) {

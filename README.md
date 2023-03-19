@@ -104,12 +104,12 @@ La incorporación de GitHub en la metodología de trabajo permitirá a los estud
     - Lista doblemente enlazada vs std::deque
     - Lista circular vs std::forward_list
   - Bolsa:
-    - Bolsa vs std::multiset || std::unordered_multiset
+    - Bolsa vs std::multiset , std::unordered_multiset
   - Set:
-    - Conjunto vs std::set || std::unordered_set.
+    - Conjunto vs std::set , std::unordered_set.
   - Diccionario:
     - Mapa vs std::map
-    - ABB || árbol AVL || tabla hash vs std::unordered_map
+    - ABB , árbol AVL , tabla hash vs std::unordered_map
   - Metodología de análisis de tipos abstractos de datos para resolución de problemas
 - Grafos
   - Introducción
@@ -133,3 +133,4 @@ La incorporación de GitHub en la metodología de trabajo permitirá a los estud
 - Schildt, H. (2001). C Manual de Referencia (4ª ed.). Mc Graw Hill. España.
 - Stroustrup, B. (2013). The C++ Programming Language (4th ed.). Addison-Wesley Professional.
 
+[Ver documentación aquí](https://domingo1987.github.io/Curso-CPP/docs/html/index.html)

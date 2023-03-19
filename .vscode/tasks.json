@@ -12,7 +12,8 @@
           "${fileDirname}\\main.exe"
         ],
         "options": {
-          "cwd": "${workspaceFolder}\\DesafioEmpleados\\"
+          //"cwd": "${workspaceFolder}\\DesafioEmpleados\\"
+          "cwd": "${fileDirname}"
         },
         "group": {
           "kind": "build",

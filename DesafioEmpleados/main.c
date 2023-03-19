@@ -4,8 +4,8 @@
  *
  * Este programa permite crear, modificar, eliminar y buscar empleados de una pequeña empresa,
  * utilizando una lista enlazada para almacenar los datos de los empleados.
- *
- * @Autor: Domingo Pérez
+ * 
+ * @author Domingo Pérez
  * @Curso: Programacion 2
  * @Año: 2023
  * @Centro: CeRP del Suroeste

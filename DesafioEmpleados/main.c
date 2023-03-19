@@ -14,12 +14,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista_empleados.h"
+// #include "empleado.h"
 
-int main() {
-    ListaEmpleados* lista = crear_lista();
+int main()
+{
+    ListaEmpleados *lista = crear_lista();
+
     int opcion = 0;
 
-    while (opcion != 6) {
+    while (opcion != 6)
+    {
         printf("\n--- MENU ---\n");
         printf("1. Agregar un nuevo empleado\n");
         printf("2. Modificar un empleado existente\n");
@@ -31,84 +35,104 @@ int main() {
 
         scanf("%d", &opcion);
 
-        switch(opcion) {
-            case 1: {
-                char nombre[50];
-                int id;
-                float salario_mensual;
-                printf("\nIngrese el nombre del nuevo empleado: ");
-                scanf("%s", nombre);
-                printf("Ingrese el ID del nuevo empleado: ");
-                scanf("%d", &id);
-                printf("Ingrese el salario mensual del nuevo empleado: ");
-                scanf("%f", &salario_mensual);
+        switch (opcion)
+        {
+        case 1:
+        {
+            char nombre[50];
+            int id;
+            float salario_mensual;
+            printf("\nIngrese el nombre del nuevo empleado: ");
+            scanf("%s", nombre);
+            printf("Ingrese el ID del nuevo empleado: ");
+            scanf("%d", &id);
+            printf("Ingrese el salario mensual del nuevo empleado: ");
+            scanf("%f", &salario_mensual);
 
-                agregar_empleado(lista, nombre, id, salario_mensual);
-                printf("\nEmpleado agregado con exito.\n");
-                break;
+            agregar_empleado(lista, nombre, id, salario_mensual);
+            printf("\nEmpleado agregado con exito.\n");
+            break;
+        }
+        case 2:
+        {
+            int id;
+            char nuevo_nombre[50];
+            float nuevo_salario;
+            printf("\nIngrese el ID del empleado que desea modificar: ");
+            scanf("%d", &id);
+
+            Empleado *empleado_modificar = buscar_empleado(lista, id);
+            if (empleado_modificar == NULL)
+            {
+                printf("\nEmpleado no encontrado.\n");
             }
-            case 2: {
-                int id;
-                char nuevo_nombre[50];
-                float nuevo_salario;
-                printf("\nIngrese el ID del empleado que desea modificar: ");
-                scanf("%d", &id);
+            else
+            {
+                mostrar_empleado(empleado_modificar);
+                printf("Ingrese el nuevo nombre del empleado: ");
+                scanf("%s", nuevo_nombre);
+                printf("Ingrese el nuevo salario mensual del empleado: ");
+                scanf("%f", &nuevo_salario);
 
-                Empleado* empleado_modificar = buscar_empleado(lista, id);
-                if (empleado_modificar == NULL) {
-                    printf("\nEmpleado no encontrado.\n");
-                } else {
-                    mostrar_empleado(empleado_modificar);
-                    printf("Ingrese el nuevo nombre del empleado: ");
-                    scanf("%s", nuevo_nombre);
-                    printf("Ingrese el nuevo salario mensual del empleado: ");
-                    scanf("%f", &nuevo_salario);
-
-                    int exito_modificacion = modificar_empleado(lista, id, nuevo_nombre, nuevo_salario);
-                    if (exito_modificacion) {
-                        printf("\nEmpleado modificado con exito.\n");
-                    } else {
-                        printf("\nError al modificar el empleado.\n");
-                    }
+                int exito_modificacion = modificar_empleado(lista, id, nuevo_nombre, nuevo_salario);
+                if (exito_modificacion)
+                {
+                    printf("\nEmpleado modificado con exito.\n");
                 }
-                break;
-            }
-            case 3: {
-                int id;
-                printf("\nIngrese el ID del empleado que desea eliminar: ");
-                scanf("%d", &id);
-
-                eliminar_empleado_l(lista, id);
-                printf("\nEmpleado eliminado con exito.\n");
-                break;
-            }
-            case 4: {
-                int id;
-                printf("\nIngrese el ID del empleado que desea buscar: ");
-                scanf("%d", &id);
-
-                Empleado* empleado_buscar = buscar_empleado(lista, id);
-                if (empleado_buscar == NULL) {
-                    printf("\nEmpleado no encontrado.\n");
-                } else {
-                    mostrar_empleado(empleado_buscar);
+                else
+                {
+                    printf("\nError al modificar el empleado.\n");
                 }
-                break;
             }
-            case 5: {
-                mostrar_lista(lista);
-                break;
+            break;
+        }
+        case 3:
+        {
+            int id;
+            printf("\nIngrese el ID del empleado que desea eliminar: ");
+            scanf("%d", &id);
+
+            eliminar_empleado_l(lista, id);
+            printf("\nEmpleado eliminado con exito.\n");
+            break;
+        }
+        case 4:
+        {
+            int id;
+            printf("\nIngrese el ID del empleado que desea buscar: ");
+            scanf("%d", &id);
+
+            Empleado *empleado_buscar = buscar_empleado(lista, id);
+            if (empleado_buscar == NULL)
+            {
+                printf("\nEmpleado no encontrado.\n");
             }
-            case 6: {
-                liberar_lista(lista);
-                printf("\nSaliendo del programa...\n");
-                break;
+            else
+            {
+                mostrar_empleado(empleado_buscar);
             }
-            default: {
-                printf("\nOpcion invalida. Intente de nuevo.\n");
-                break;
-            }
+            break;
+        }
+        case 5:
+        {
+            mostrar_lista(lista);
+            break;
+        }
+        case 6:
+        {
+            liberar_lista(lista);
+            printf("\nSaliendo del programa...\n");
+            break;
+        }
+        default:
+        {
+            printf("\nOpcion invalida. Intente de nuevo.\n");
+            break;
+        }
         }
     }
+    printf("\nFIN NFIN.\n");
+    system("pause");
+
     return 0;
 }

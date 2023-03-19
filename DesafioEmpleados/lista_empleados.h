@@ -26,16 +26,16 @@
  * @var Nodo::siguiente
  * Puntero al siguiente nodo de la lista.
 */
-typedef struct Nodo {
+typedef struct nodo {
     Empleado* empleado; /**< Empleado almacenado en el nodo */
-    struct Nodo *siguiente; /**< Puntero al siguiente nodo */
+    struct nodo *siguiente; /**< Puntero al siguiente nodo */
 } Nodo;
 
 /**
  * @struct ListaEmpleados
  * @brief Estructura de la lista enlazada.
  */
-typedef struct ListaEmpleados {
+typedef struct listaEmpleados {
     Nodo* cabeza; /**< Puntero al primer nodo de la lista */
     int longitud; /**< Cantidad de nodos en la lista */
 } ListaEmpleados;

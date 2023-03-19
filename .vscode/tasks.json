@@ -7,18 +7,20 @@
         "command": "gcc",
         "args": [
           "-g",
-          "${file}",
+          "*.c",
           "-o",
-          "${workspaceFolder}/a.out"
+          "${fileDirname}\\main.exe"
         ],
+        "options": {
+          "cwd": "${workspaceFolder}\\DesafioEmpleados\\"
+        },
         "group": {
           "kind": "build",
           "isDefault": true
         },
-        "presentation": {
-          "reveal": "always"
-        },
-        "problemMatcher": "$gcc"
+        "problemMatcher": [
+          "$gcc"
+        ]
       },
       {
         "label": "build_cpp",

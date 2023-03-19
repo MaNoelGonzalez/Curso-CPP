@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"lista_empleados.h": "c",
+			"stdlib.h": "c"
+		}
+	}
 }

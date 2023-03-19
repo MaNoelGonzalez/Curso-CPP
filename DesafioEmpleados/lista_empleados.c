@@ -7,7 +7,9 @@ ListaEmpleados* crear_lista() {
     ListaEmpleados* lista = (ListaEmpleados*)malloc(sizeof(ListaEmpleados));
     lista->cabeza = NULL;
     lista->longitud = 0;
+    
     return lista;
+    //return NULL;
 }
 
 void agregar_empleado(ListaEmpleados* lista, const char* nombre, int id, float salario_mensual) {
@@ -23,7 +25,7 @@ Empleado* buscar_empleado(const ListaEmpleados* lista, int id) {
     Nodo* actual = lista->cabeza;
     while (actual != NULL) {
         if (actual->empleado->id == id) {
-            return &(actual->empleado);
+            return (actual->empleado);
         }
         actual = actual->siguiente;
     }
@@ -50,7 +52,7 @@ void eliminar_empleado_l(ListaEmpleados* lista, int id) {
             } else {
                 anterior->siguiente = actual->siguiente;
             }
-            eliminar_empleado(&(actual->empleado));
+            eliminar_empleado(actual->empleado);
             free(actual);
             lista->longitud--;
             return;
@@ -64,18 +66,18 @@ void mostrar_lista(const ListaEmpleados* lista) {
     printf("Lista de empleados:\n");
     Nodo* actual = lista->cabeza;
     while (actual != NULL) {
-        mostrar_empleado(&(actual->empleado));
+        mostrar_empleado(actual->empleado);
         actual = actual->siguiente;
     }
 }
 
 void liberar_lista(ListaEmpleados* lista) {
-    Nodo* actual = lista->cabeza;
+    /*Nodo* actual = lista->cabeza;
     while (actual != NULL) {
         Nodo* siguiente = actual->siguiente;
-        eliminar_empleado(&(actual->empleado));
+        eliminar_empleado(actual->empleado);
         free(actual);
         actual = siguiente;
-    }
+    }*/
     free(lista);
 }

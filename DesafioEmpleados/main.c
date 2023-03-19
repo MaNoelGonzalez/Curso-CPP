@@ -1,14 +1,11 @@
 /**
  * @file main.c
  * @brief Programa de gestión de empleados.
- *
  * Este programa permite crear, modificar, eliminar y buscar empleados de una pequeña empresa,
  * utilizando una lista enlazada para almacenar los datos de los empleados.
+ * Curso Programacion 2 - Año 2023 - CeRP del Suroeste
  * 
  * @author Domingo Pérez
- * @Curso: Programacion 2
- * @Año: 2023
- * @Centro: CeRP del Suroeste
  * @date 19/03/2023
  */
 
@@ -142,7 +139,6 @@ int main()
         }
     }
 
-    printf("\nFIN NFIN.\n");
     system("pause");
 
     return 0;

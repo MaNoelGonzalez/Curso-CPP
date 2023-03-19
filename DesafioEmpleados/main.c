@@ -18,7 +18,7 @@ int main()
     ListaEmpleados *lista = crear_lista();
 
     // Cargar lista de empleados desde el archivo
-    if (cargar_lista_empleados("empleados.data", lista) != 0) {
+    if (cargar_lista_empleados("DesafioEmpleados/empleados.data", lista) != 0) {
         printf("Error al cargar el archivo de empleados.\n");
     }
 
@@ -123,7 +123,7 @@ int main()
         case 6:
         { 
             // Guardar lista de empleados en el archivo
-            if (guardar_lista_empleados("empleados.data", lista) != 0) {
+            if (guardar_lista_empleados("DesafioEmpleados/empleados.data", lista) != 0) {
                 printf("Error al guardar el archivo de empleados.\n");
             }
             

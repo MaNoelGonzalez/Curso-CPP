@@ -42,7 +42,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "Programacion 2"
+PROJECT_NAME           = "Programacion 2 - sacar nombre"
 HIDE_IN_BODY_DOCS      = YES
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This

@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/a.out",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "preLaunchTask": "build_c",
+        "setupCommands": [
+          {
+            "description": "Habilitar la representación en bonito impresión",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/a.out",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "preLaunchTask": "build_cpp",
+        "setupCommands": [
+          {
+            "description": "Habilitar la representación en bonito impresión",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }

@@ -1,6 +1,6 @@
 #include <stdio.h>
+//#include <stdlib.h>
 #include "file_manager.h"
-#include "lista_empleados.h"
 
 int guardar_lista_empleados(const char *filename, ListaEmpleados *lista) {
     FILE *file = fopen(filename, "wb");

@@ -14,11 +14,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista_empleados.h"
-// #include "empleado.h"
 
 int main()
 {
     ListaEmpleados *lista = crear_lista();
+
+    // Cargar lista de empleados desde el archivo
+    if (cargar_lista_empleados("empleados.data", lista) != 0) {
+        printf("Error al cargar el archivo de empleados.\n");
+    }
 
     int opcion = 0;
 
@@ -119,7 +123,12 @@ int main()
             break;
         }
         case 6:
-        {
+        { 
+            // Guardar lista de empleados en el archivo
+            if (guardar_lista_empleados("empleados.data", lista) != 0) {
+                printf("Error al guardar el archivo de empleados.\n");
+            }
+            
             liberar_lista(lista);
             printf("\nSaliendo del programa...\n");
             break;
@@ -131,6 +140,7 @@ int main()
         }
         }
     }
+
     printf("\nFIN NFIN.\n");
     system("pause");
 

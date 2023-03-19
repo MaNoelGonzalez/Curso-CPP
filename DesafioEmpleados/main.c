@@ -5,10 +5,11 @@
  * Este programa permite crear, modificar, eliminar y buscar empleados de una pequeña empresa,
  * utilizando una lista enlazada para almacenar los datos de los empleados.
  *
- * Autor: Domingo Pérez
- * Curso: Programacion 2
- * Año: 2023
- * Centro: CeRP del Suroeste
+ * @Autor: Domingo Pérez
+ * @Curso: Programacion 2
+ * @Año: 2023
+ * @Centro: CeRP del Suroeste
+ * @date 19/03/2023
  */
 
 #include <stdio.h>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['agregar_5fempleado_0',['agregar_empleado',['../lista__empleados_8h.html#a70196702adc10f71c33f7fc07957ec5a',1,'lista_empleados.c']]]
+  ['programación_202_0',['Programación 2',['../md__r_e_a_d_m_e.html',1,'']]]
 ];

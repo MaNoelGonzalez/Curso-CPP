@@ -1,6 +1,12 @@
 #include <iostream>
+#include "Empleado.hpp"
 
 int main() {
-    std::cout << "Hola, mundo hoy 2023!" << std::endl;
+    int var = 0;
+    Empleado empleado1("Juan Pérez", 35, 3000.0);
+
+    empleado1.mostrarInfo();
+    std::cout << " Aqui va algo "<< std::endl;
+
     return 0;
 }

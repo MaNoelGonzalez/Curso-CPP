@@ -1,11 +1,33 @@
 #include "Empleado.hpp"
 #include <iostream>
 
-Empleado::Empleado(const std::string& nombre, int edad, double salario)
-    : nombre(nombre), edad(edad), salario(salario) {}
+Empleado::Empleado(const std::string& nombre, int id, float salarioMensual)
+        : nombre(nombre), id(id), salarioMensual(salarioMensual) {}
 
-void Empleado::mostrarInfo() const {
-    std::cout << "Nombre: " << nombre << std::endl;
-    std::cout << "Edad: " << edad << std::endl;
-    std::cout << "Salario: $" << salario << std::endl;
+std::string Empleado::getNombre() const {
+    return nombre;
+}
+
+int Empleado::getId() const {
+    return id;
+}
+
+float Empleado::getSalarioMensual() const {
+    return salarioMensual;
+}
+
+void Empleado::setNombre(const std::string& nombre) {
+    this->nombre = nombre;
+}
+
+void Empleado::setId(int id) {
+    this->id = id;
+}
+
+void Empleado::setSalarioMensual(float salarioMensual) {
+    this->salarioMensual = salarioMensual;
+}
+
+void Empleado::mostrar() const {
+    std::cout << "Nombre: " << nombre << "\nID: " << id << "\nSalario mensual: " << salarioMensual << std::endl;
 }

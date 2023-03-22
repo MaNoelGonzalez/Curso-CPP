@@ -1,3 +1,8 @@
+/**
+ * @file FileHandler.hpp
+ * @brief Definición de la clase FileHandler.
+ */
+
 #ifndef FILE_HANDLER_HPP
 #define FILE_HANDLER_HPP
 

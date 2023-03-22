@@ -1,5 +1,5 @@
 /**
- * @file empleado.hpp
+ * @file Empleado.hpp
  * @brief Definición de la clase Empleado.
  */
 

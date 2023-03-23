@@ -56,7 +56,7 @@ int main()
             case 2:{
                 // Aquí hay que modificar un empleado existente de la lista
                 int id;
-                std::cout << "Ingrese la ID del empleado a modificar: ";
+                std::cout << "Ingrese la ID del empleado que desea modificar: ";
                 std::cin >> id;
 
                 // Buscar el empleado por su ID

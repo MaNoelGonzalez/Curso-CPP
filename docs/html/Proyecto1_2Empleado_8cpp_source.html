@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Programación 2 CPP: Fichero Fuente ProyDesafioEmpleados/Empleado.hpp</title>
+<title>Programación 2 CPP: Fichero Fuente Proyecto1/Empleado.cpp</title>
 <link rel="stylesheet" type="text/css" href="tabs.css">
 <link rel="stylesheet" type="text/css" href="docs/custom.css">
 <script type="text/javascript" src="jquery.js"></script>
@@ -78,46 +78,47 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2dd6cf884287e0aaf3ed7cfa3b8792b9.html">ProyDesafioEmpleados</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_591496ebaafef7fecd0632013e96f30e.html">Proyecto1</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">Empleado.hpp</div></div>
+  <div class="headertitle"><div class="title">Empleado.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="ProyDesafioEmpleados_2Empleado_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef EMPLEADO_HPP</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define EMPLEADO_HPP</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<a href="Proyecto1_2Empleado_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="Proyecto1_2Empleado_8hpp.html">Empleado.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><a class="code hl_function" href="classEmpleado.html#a22a7deac13138e72c2db2a9e68032835">Empleado::Empleado</a>(<span class="keyword">const</span> std::string&amp; nombre, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">float</span> salarioMensual)</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>        : nombre(nombre), id(id), salarioMensual(salarioMensual) {}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>std::string <a class="code hl_function" href="classEmpleado.html#ae6ba65450c51cf87322e3ac7d4b53564">Empleado::getNombre</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordflow">return</span> nombre;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classEmpleado.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classEmpleado.html">Empleado</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::string nombre; </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> id; </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">float</span> salarioMensual; </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classEmpleado.html#a22a7deac13138e72c2db2a9e68032835">   25</a></span>    <a class="code hl_function" href="classEmpleado.html#a22a7deac13138e72c2db2a9e68032835">Empleado</a>() : nombre(<span class="stringliteral">&quot;&quot;</span>), id(0), salarioMensual(0.0) {}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">int</span> <a class="code hl_function" href="classEmpleado.html#a5a553f298e9b756d2c9208701dea5dc0">Empleado::getId</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">return</span> id;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">float</span> <a class="code hl_function" href="classEmpleado.html#a052535edb1e59868414b371035982d9a">Empleado::getSalarioMensual</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">return</span> salarioMensual;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#ac54b76901d2e7d4b78c8ccdef27bac50">Empleado::setNombre</a>(<span class="keyword">const</span> std::string&amp; nombre) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;nombre = nombre;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a21e97273c5913f69f503292f3c3137dd">Empleado::setId</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    this-&gt;<span class="keywordtype">id</span> = id;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classEmpleado.html#a22a7deac13138e72c2db2a9e68032835">Empleado</a>(<span class="keyword">const</span> std::string&amp; nombre, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">float</span> salarioMensual);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    std::string <a class="code hl_function" href="classEmpleado.html#ae6ba65450c51cf87322e3ac7d4b53564">getNombre</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classEmpleado.html#a5a553f298e9b756d2c9208701dea5dc0">getId</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classEmpleado.html#a052535edb1e59868414b371035982d9a">getSalarioMensual</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#ac54b76901d2e7d4b78c8ccdef27bac50">setNombre</a>(<span class="keyword">const</span> std::string&amp; nombre);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a21e97273c5913f69f503292f3c3137dd">setId</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a599e019c516fe7084246692b63e6ae03">setSalarioMensual</a>(<span class="keywordtype">float</span> salarioMensual);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a9317e80a8c409cd6cf6ddf63bdf0c8ae">mostrar</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif </span><span class="comment">// EMPLEADO_HPP</span></div>
-<div class="ttc" id="aclassEmpleado_html"><div class="ttname"><a href="classEmpleado.html">Empleado</a></div><div class="ttdoc">Clase que representa a un empleado con su nombre, id y salario mensual.</div><div class="ttdef"><b>Definition:</b> <a href="ProyDesafioEmpleados_2Empleado_8hpp_source.html#l00015">Empleado.hpp:15</a></div></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a599e019c516fe7084246692b63e6ae03">Empleado::setSalarioMensual</a>(<span class="keywordtype">float</span> salarioMensual) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    this-&gt;salarioMensual = salarioMensual;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">void</span> <a class="code hl_function" href="classEmpleado.html#a9317e80a8c409cd6cf6ddf63bdf0c8ae">Empleado::mostrar</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Nombre: &quot;</span> &lt;&lt; nombre &lt;&lt; <span class="stringliteral">&quot;\nID: &quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; <span class="stringliteral">&quot;\nSalario mensual: &quot;</span> &lt;&lt; salarioMensual &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="ttc" id="aProyecto1_2Empleado_8hpp_html"><div class="ttname"><a href="Proyecto1_2Empleado_8hpp.html">Empleado.hpp</a></div><div class="ttdoc">Definición de la clase Empleado.</div></div>
 <div class="ttc" id="aclassEmpleado_html_a052535edb1e59868414b371035982d9a"><div class="ttname"><a href="classEmpleado.html#a052535edb1e59868414b371035982d9a">Empleado::getSalarioMensual</a></div><div class="ttdeci">float getSalarioMensual() const</div><div class="ttdoc">Método que devuelve el salario mensual del empleado.</div><div class="ttdef"><b>Definition:</b> <a href="ProyDesafioEmpleados_2Empleado_8cpp_source.html#l00015">Empleado.cpp:15</a></div></div>
 <div class="ttc" id="aclassEmpleado_html_a21e97273c5913f69f503292f3c3137dd"><div class="ttname"><a href="classEmpleado.html#a21e97273c5913f69f503292f3c3137dd">Empleado::setId</a></div><div class="ttdeci">void setId(int id)</div><div class="ttdoc">Método que establece la ID del empleado.</div><div class="ttdef"><b>Definition:</b> <a href="ProyDesafioEmpleados_2Empleado_8cpp_source.html#l00023">Empleado.cpp:23</a></div></div>
 <div class="ttc" id="aclassEmpleado_html_a22a7deac13138e72c2db2a9e68032835"><div class="ttname"><a href="classEmpleado.html#a22a7deac13138e72c2db2a9e68032835">Empleado::Empleado</a></div><div class="ttdeci">Empleado()</div><div class="ttdoc">Constructor vacío de la clase Empleado.</div><div class="ttdef"><b>Definition:</b> <a href="ProyDesafioEmpleados_2Empleado_8hpp_source.html#l00025">Empleado.hpp:25</a></div></div>

@@ -7,24 +7,35 @@
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Programación 2 CPP: Fichero Fuente ProyDesafioEmpleados/FileHandler.hpp</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="tabs.css">
+<link rel="stylesheet" type="text/css" href="docs/custom.css">
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
-<table cellspacing="0" cellpadding="0">
- <tbody>
- <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logoDIC.png"/></td>
- </tr>
- </tbody>
-</table>
+  <table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+          <div class="logo-image">
+            <img alt="Logo" src="logoDIC.png"/>
+          </div>
+        </tr>
+        <tr>
+          <div class="button-image">
+            <a href="https://github.com/Domingo1987">
+              <img alt="GitHub" src="../github-button.png" class="button-img">
+            </a>
+          </div>
+        </tr>
+    </tbody>
+  </table>
 </div>
 <!-- end header part -->
 <!-- Generado por Doxygen 1.9.6 -->
@@ -96,10 +107,10 @@ $(function() {
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// FILE_HANDLER_HPP</span></div>
 <div class="ttc" id="aProyecto1_2Empleado_8hpp_html"><div class="ttname"><a href="Proyecto1_2Empleado_8hpp.html">Empleado.hpp</a></div><div class="ttdoc">Definición de la clase Empleado.</div></div>
-<div class="ttc" id="aclassFileHandler_html"><div class="ttname"><a href="classFileHandler.html">FileHandler</a></div><div class="ttdoc">Clase que maneja la lectura y escritura de la lista de empleados desde y hacia un archivo.</div><div class="ttdef"><b>Definition:</b> FileHandler.hpp:18</div></div>
-<div class="ttc" id="aclassFileHandler_html_a7b8bf5f7cec16af62a6818407f6578d7"><div class="ttname"><a href="classFileHandler.html#a7b8bf5f7cec16af62a6818407f6578d7">FileHandler::cargar_lista_empleados</a></div><div class="ttdeci">int cargar_lista_empleados(std::list&lt; Empleado &gt; &amp;lista)</div><div class="ttdoc">Carga la lista de empleados desde un archivo.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:18</div></div>
-<div class="ttc" id="aclassFileHandler_html_a9ce2cf4d175ba6e06ffda8b82c19b85d"><div class="ttname"><a href="classFileHandler.html#a9ce2cf4d175ba6e06ffda8b82c19b85d">FileHandler::guardar_lista_empleados</a></div><div class="ttdeci">int guardar_lista_empleados(const std::list&lt; Empleado &gt; &amp;lista)</div><div class="ttdoc">Guarda la lista de empleados en un archivo.</div><div class="ttdef"><b>Definition:</b> FileHandler.cpp:3</div></div>
-<div class="ttc" id="aclassFileHandler_html_abe14df330dd2da2a884c1c9dadb397c4"><div class="ttname"><a href="classFileHandler.html#abe14df330dd2da2a884c1c9dadb397c4">FileHandler::FileHandler</a></div><div class="ttdeci">FileHandler(const std::string &amp;filename)</div><div class="ttdoc">Constructor de la clase FileHandler.</div><div class="ttdef"><b>Definition:</b> FileHandler.hpp:27</div></div>
+<div class="ttc" id="aclassFileHandler_html"><div class="ttname"><a href="classFileHandler.html">FileHandler</a></div><div class="ttdoc">Clase que maneja la lectura y escritura de la lista de empleados desde y hacia un archivo.</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8hpp_source.html#l00018">FileHandler.hpp:18</a></div></div>
+<div class="ttc" id="aclassFileHandler_html_a7b8bf5f7cec16af62a6818407f6578d7"><div class="ttname"><a href="classFileHandler.html#a7b8bf5f7cec16af62a6818407f6578d7">FileHandler::cargar_lista_empleados</a></div><div class="ttdeci">int cargar_lista_empleados(std::list&lt; Empleado &gt; &amp;lista)</div><div class="ttdoc">Carga la lista de empleados desde un archivo.</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8cpp_source.html#l00018">FileHandler.cpp:18</a></div></div>
+<div class="ttc" id="aclassFileHandler_html_a9ce2cf4d175ba6e06ffda8b82c19b85d"><div class="ttname"><a href="classFileHandler.html#a9ce2cf4d175ba6e06ffda8b82c19b85d">FileHandler::guardar_lista_empleados</a></div><div class="ttdeci">int guardar_lista_empleados(const std::list&lt; Empleado &gt; &amp;lista)</div><div class="ttdoc">Guarda la lista de empleados en un archivo.</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8cpp_source.html#l00003">FileHandler.cpp:3</a></div></div>
+<div class="ttc" id="aclassFileHandler_html_abe14df330dd2da2a884c1c9dadb397c4"><div class="ttname"><a href="classFileHandler.html#abe14df330dd2da2a884c1c9dadb397c4">FileHandler::FileHandler</a></div><div class="ttdeci">FileHandler(const std::string &amp;filename)</div><div class="ttdoc">Constructor de la clase FileHandler.</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8hpp_source.html#l00027">FileHandler.hpp:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

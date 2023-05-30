@@ -16,7 +16,12 @@ struct Fecha {
 class Empleado {
 public:
     Empleado() = default;
-    Empleado(const std::string& nombre, const std::string& apellido, int cedula, const Fecha& fechaNacimiento);
+    Empleado(
+        const std::string& nombre, 
+        const std::string& apellido, 
+        int cedula, 
+        const Fecha& fechaNacimiento
+    );
     const std::string& getNombre() const;
     const std::string& getApellido() const;
     int getCedula() const;

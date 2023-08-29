@@ -5,6 +5,7 @@
 #include <iostream>
 #include <map>
 #include <forward_list>
+#include <string>
 
 int main(){
     //Creamos el std::map
@@ -13,12 +14,14 @@ int main(){
     
     std::forward_list <std::string> palabras;
     std::forward_list <std::string>::iterator it;
-    
+
+    std::string texto= "Hola, mi dia fue muy bueno. Yo me llamo Marlon.";
+
     palabras = {"hola", "chau", "prueba", "hola", "ayer", "manana", "manzana", "Ayer", "carlos"};
 
     it = palabras.begin();
     while(it!= palabras.end()){
-        std::cout << "Palabra: " << *it << std::endl;
+        //std::cout << "Palabra: " << *it << std::endl;
         if(contador_palabras.contains(*it)){
             contador_palabras[*it]=contador_palabras[*it]+1; 
         } else {
